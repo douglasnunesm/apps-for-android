@@ -138,7 +138,7 @@ public class BallRegion extends Shape2d {
     /**
      * Update the balls an (if it exists) the animating line in this region.
      * @param now in millis
-     * @return A new region if a split has occured because the animating line
+     * @return A new region if a split has occurred because the animating line
      *     finished.
      */
     public BallRegion update(long now) {
@@ -173,7 +173,7 @@ public class BallRegion extends Shape2d {
 
         handleShrinkToFit(now);
 
-        // no collsion, new region means we need to split out the apropriate
+        // no collsion, new region means we need to split out the appropriate
         // balls into a new region
         if (newRegion && mAnimatingLine != null) {
             BallRegion otherRegion = splitRegion(
