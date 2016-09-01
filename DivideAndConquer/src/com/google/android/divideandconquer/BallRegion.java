@@ -173,7 +173,7 @@ public class BallRegion extends Shape2d {
 
         handleShrinkToFit(now);
 
-        // no collsion, new region means we need to split out the apropriate
+        // no collsion, new region means we need to split out the appropriate
         // balls into a new region
         if (newRegion && mAnimatingLine != null) {
             BallRegion otherRegion = splitRegion(
